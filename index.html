@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-коды для ссылок - OZON Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>QR-генератор</h1>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="container">
+            <div class="converter-section">
+                <h2>Преобразуйте ссылку в QR-код</h2>
+                <p>Введите URL-адрес, чтобы создать QR-код для удобного доступа</p>
+                
+                <div class="input-group">
+                    <input type="url" id="urlInput" placeholder="Введите ссылку (например, https://www.example.com)" required>
+                    <button id="generateBtn">Создать QR-код</button>
+                </div>
+                
+                <div class="qr-container" id="qrContainer">
+                    <!-- QR-код будет отображаться здесь -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 QR-генератор. Создано в стиле OZON.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
